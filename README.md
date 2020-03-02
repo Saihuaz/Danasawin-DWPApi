@@ -1,7 +1,7 @@
 # DanasawinDWPRestApp
 My Rest API client that consumes  https://bpdts-test-app.herokuapp.com 
 
-Assignment Specification:
+**Assignment Specification:**
 
 •	Using the language of your choice please build your own API which calls the API at https://bpdts-test-app.herokuapp.com/ 
 
@@ -11,7 +11,7 @@ Assignment Specification:
 
 •	Push the answer to Github
 
-About my App:
+**About my App:**
 
 This application was built using Spring boot framework and Java programming language (Eclipse IDE).
 
@@ -20,14 +20,14 @@ Junit 4 and Mockito was used for Unit and Behavioural Testing (service and contr
 I applied MVC to structure my code design: packages consist of main, model, controller, service.
 
 
-URL functions:
+**URL functions:**
 
 To retrieve all users from api: localhost:8080/myapp/allpeople
 
 To retrieve only users in london: localhost:8080/myapp/londonpeople
 
 
-My app progress:
+**My app progress:**
 
 My application will be able to consume the web api and return all the users with their respective infiormation.
 
