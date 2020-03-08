@@ -8,8 +8,8 @@ public interface PeopleService {
 	
 	List <Object> getAllPeople();
 	
-	List<People> getLondonPeople(double longitude, double latitude);
+	List<People> getLondonPeople(double latitude, double longitude);
 	
-	List<People> getPeopleWithin50MilesOfLondon();
+	List<People> getPeopleWithin50MilesOfLondon(double lat1,double lat2, double long1, double long2);
 
 }

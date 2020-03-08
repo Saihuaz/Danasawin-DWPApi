@@ -3,7 +3,7 @@ package danasawin.dwptest.restapi.dwptestrestapi.model;
 import org.springframework.stereotype.Component;
 
 @Component
-public class People {
+public class People extends Object {
 	private int id;
 	private String firstName;
 	private String lastName;
@@ -12,9 +12,6 @@ public class People {
 	private double longitude;
 	
 	public People() {}
-	
-	
-
 	public People(int id, String firstName, String lastName, double latitude, double longitude) {
 		super();
 		this.id = id;
@@ -23,8 +20,6 @@ public class People {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
-
-
 
 	public int getId() {
 		return id;

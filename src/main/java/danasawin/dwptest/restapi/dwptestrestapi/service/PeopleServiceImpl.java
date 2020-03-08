@@ -25,20 +25,20 @@ public class PeopleServiceImpl implements PeopleService {
 	@Override
 	public List<People> getLondonPeople(double latitude, double longitude) {
 		String url = "https://bpdts-test-app.herokuapp.com/users";
-		People people = restTemplate.getForObject(url, People.class);
-		double londonLatitude = 51.509865;
-		double londonLongitude = -0.118092;
-		if ((latitude == londonLatitude) && (longitude == londonLongitude)) {
-			return Arrays.asList(people);
-		} else {
+		People[] peoples = restTemplate.getForObject(url, People[].class);
 
-			return null;
-		}
+		for (People obj : peoples)
+			if ((obj.getLatitude() == latitude && obj.getLongitude() == longitude)) {
+				return Arrays.asList(obj);
+			}
+		return Arrays.asList(peoples);
 	}
 
 	@Override
-	public List<People> getPeopleWithin50MilesOfLondon() {
-		return null;
+	public List<People> getPeopleWithin50MilesOfLondon(double lat1, double lat2, double long1, double long2) {
+		String url = "https://bpdts-test-app.herokuapp.com/users";
+		People[] peoples = restTemplate.getForObject(url, People[].class);
+		return Arrays.asList(peoples);
 	}
 
 }
